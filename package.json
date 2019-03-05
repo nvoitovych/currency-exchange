@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint server/**",
-    "test:e2e": "NODE_ENV=test jest --detectOpenHandles e2e/",
+    "lint": "eslint server/** config/*.js",
     "test": "jest --detectOpenHandles server",
+    "test:e2e": "NODE_ENV=test jest --detectOpenHandles e2e/",
     "coverage": "jest  --detectOpenHandles --collectCoverageFrom=server/**.js --coverage server",
     "coverage:e2e": "jest  --detectOpenHandles --collectCoverageFrom=server/**.js --coverage e2e",
     "start:dev": "NODE_ENV=development node server/server.js",

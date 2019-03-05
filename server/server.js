@@ -28,7 +28,7 @@ switch (NODE_ENV) {
 const { error, parsed } = require('dotenv').config({ debug: true, path: envConfigPath });
 
 if (typeof error !== 'undefined') {
-// eslint-disable-next-line no-console
+  // eslint-disable-next-line no-console
   console.log('Error on server started with dotenv:\n', error);
   throw Error;
 }
