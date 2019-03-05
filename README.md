@@ -3,7 +3,7 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 Simple currency exchange app between 'USD' and 'UAH'. 
-App uses 'bank.gov.ua' API to get current currency rates. 
+App uses 'bank.gov.ua' API to get current day currency rates. Then save it to redis and use cached rate.
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ node.js v8 or higher, redis
 Download project
 
 ```
-got clone 'https://github.com/ShellyShelly/currency-exchange.git'
+git clone 'https://github.com/ShellyShelly/currency-exchange.git'
 ```
 
 Open project directory
