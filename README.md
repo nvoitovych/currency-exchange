@@ -2,7 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-Simple currency exchange app for 'USD' between 'UAH'. 
+Simple currency exchange app between 'USD' and 'UAH'. 
 App uses 'bank.gov.ua' API to get current currency rates. 
 
 ## Table of Contents
@@ -60,7 +60,8 @@ npm run start:dev
 ```
 
 ## Tests
-###Running the tests
+
+### Running the tests
 
 Run e2e tests
 ```
