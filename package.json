@@ -1,0 +1,40 @@
+{
+  "name": "currency-exchange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint server/**",
+    "test:e2e": "NODE_ENV=test jest --detectOpenHandles e2e/",
+    "test": "jest --detectOpenHandles server",
+    "coverage": "jest  --detectOpenHandles --collectCoverageFrom=server/**.js --coverage server",
+    "coverage:e2e": "jest  --detectOpenHandles --collectCoverageFrom=server/**.js --coverage e2e",
+    "start:dev": "NODE_ENV=development node server/server.js",
+    "start:prod": "NODE_ENV=production node server/server.js"
+  },
+  "jest": {
+    "//": "Comment goes here"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1 || 5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.0",
+    "jest": "^24.1.0",
+    "supertest": "^3.4.2"
+  }
+}
